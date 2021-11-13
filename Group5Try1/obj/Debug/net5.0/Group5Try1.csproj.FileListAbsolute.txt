@@ -63,3 +63,5 @@ C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\Group5Try1.dll
 C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\ref\Group5Try1.dll
 C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\Group5Try1.pdb
 C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\Group5Try1.genruntimeconfig.cache
+C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\Razor\Views\_Layout.cshtml.g.cs
+C:\Capgemini\Group5\Group5Try1\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs

@@ -11,6 +11,7 @@ namespace Group5Try1.Models
 
         [Column("Location")]
         [StringLength(50)]
+        [Required]
         public string Location { get; set; }
     }
 }

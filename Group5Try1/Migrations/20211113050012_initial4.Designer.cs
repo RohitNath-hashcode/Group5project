@@ -3,14 +3,16 @@ using Group5Try1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Group5Try1.Migrations
 {
     [DbContext(typeof(SettingDbContext))]
-    partial class SettingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211113050012_initial4")]
+    partial class initial4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,7 +28,6 @@ namespace Group5Try1.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Location")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("Location");
@@ -61,16 +62,12 @@ namespace Group5Try1.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("Name");
 
-                    b.Property<string>("PImage")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("PImage");
-
                     b.Property<int>("PLocation_id")
                         .HasColumnType("int")
                         .HasColumnName("PLocation_id");
 
                     b.Property<int>("PhNumber")
+                        .HasMaxLength(50)
                         .HasColumnType("int")
                         .HasColumnName("PhNumber");
 

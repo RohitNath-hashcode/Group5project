@@ -24,14 +24,13 @@ namespace Group5Try1.Models
 
 
 
-        [Column("Number")]
+        [Column("PhNumber")]
         [Required]
-        [StringLength(50)]
-        public int Number { get; set; }
+        public int PhNumber { get; set; }
 
-        [Column("Practice Location")]
-        [StringLength(50)]
-        public string PracticeLesson { get; set; }
+        [Column("PImage")]
+        [StringLength(500)]
+        public string PImage { get; set; }
 
         [Column("NPI No")]
         [Required]
@@ -46,6 +45,7 @@ namespace Group5Try1.Models
         public Speciality Speciality { get; set; }
 
         [Column("PLocation_id")]
+        [Required]
         public int PLocation_id { get; set; }
 
         [ForeignKey("PLocation_id")]

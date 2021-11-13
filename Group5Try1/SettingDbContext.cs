@@ -12,5 +12,7 @@ namespace Group5Try1
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Speciality> Specialities { get; set; }
         public DbSet<PLocation> PLocations { get; set; }
+
+        
     }
 }

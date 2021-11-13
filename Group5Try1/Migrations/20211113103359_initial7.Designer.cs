@@ -3,14 +3,16 @@ using Group5Try1;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Group5Try1.Migrations
 {
     [DbContext(typeof(SettingDbContext))]
-    partial class SettingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211113103359_initial7")]
+    partial class initial7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,11 +62,6 @@ namespace Group5Try1.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("Name");
-
-                    b.Property<string>("PImage")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("PImage");
 
                     b.Property<int>("PLocation_id")
                         .HasColumnType("int")
